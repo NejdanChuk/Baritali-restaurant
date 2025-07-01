@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Italiano Ristorante</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Italiano Ristorante</h1>
+  </header>
+
+  <main>
+    <section id="menu">
+      <h2>Меню</h2>
+      <div class="menu-items">
+        <div class="item">
+          <img src="https://images.unsplash.com/photo-1607273141389-b58d9efb53a5" alt="Pizza Margherita" />
+          <h3>Pizza Margherita</h3>
+          <p>Традиционная пицца с моцареллой и базиликом</p>
+          <span>₪35</span>
+          <button onclick="addToCart('Pizza Margherita', 35)">Добавить в корзину</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="cart">
+      <h2>Корзина</h2>
+      <ul id="cart-items"></ul>
+      <p><strong>Итого:</strong> ₪<span id="total">0</span></p>
+      <button onclick="clearCart()">Очистить корзину</button>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
